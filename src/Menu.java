@@ -11,16 +11,16 @@ public class Menu {
         MenuLabel1.setBounds(500,30,50,100);
 
         JButton MenuButton1 = new JButton("Create Relay");
-        MenuButton1.setBounds(125,100,150,340);
+        MenuButton1.setBounds(100,300,150,50);
 
         JButton MenuButton2 = new JButton("Add Swimmers");
-        MenuButton2.setBounds(275, 100, 150, 340);
+        MenuButton2.setBounds(300, 300, 150, 50);
 
         JButton MenuButton3 = new JButton("View Relay");
-        MenuButton3.setBounds(300, 100, 200, 340);
+        MenuButton3.setBounds(500, 300, 150, 50);
 
         JButton MenuButton4 = new JButton("View Swimmers");
-        MenuButton4.setBounds(400, 100, 200, 340);
+        MenuButton4.setBounds(700, 300, 150, 50);
 
 
         MenuBox.add(MenuLabel1);
