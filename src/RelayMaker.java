@@ -1,8 +1,7 @@
 import java.io.IOException;
-import java.io.RandomAccessFile;
 import java.util.Scanner;
 
-public class RelayMaker {
+public class RelayMaker extends Swimmer {
 
     public static void main(String[] args) throws IOException {
 
@@ -30,10 +29,11 @@ public class RelayMaker {
         swimmer.setGender(ge);
 
         SaveInfo info = new SaveInfo();
-        info.saveName();
-        info.saveAge();
-        info.saveGroup();
-        info.saveGender();
+        info.saveInfo(getFirstName() + " " + getLastName(),"name.txt");
+        info.saveInfo(String.valueOf(getAge()), "age.txt");
+        info.saveInfo(getGroup(), "group.txt");
+        info.saveInfo(String.valueOf(getGender()), "gender.txt");
+
 
 
 

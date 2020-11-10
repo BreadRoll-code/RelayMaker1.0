@@ -1,9 +1,10 @@
 import javax.swing.*;
 import java.io.IOException;
 
-public class addSwimmer {
+public class addSwimmer extends Swimmer {
     static void addGUI() throws IOException {
 
+        SaveInfo info = new SaveInfo();
         JFrame box = new JFrame("frame");
         box.setBounds(150,100,1000,500);
 
@@ -33,7 +34,7 @@ public class addSwimmer {
             swimmer.setName(text1.getText(), text2.getText());
             box.setVisible(false);
             try {
-                SaveInfo.saveName();
+                info.saveInfo(getFirstName() + "" + getLastName(), "name.txt");
             } catch (IOException e) {
                 e.printStackTrace();
             }
