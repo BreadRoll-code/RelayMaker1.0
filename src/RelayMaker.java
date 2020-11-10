@@ -34,6 +34,8 @@ public class RelayMaker extends Swimmer {
         info.saveInfo(getGroup(), "group.txt");
         info.saveInfo(String.valueOf(getGender()), "gender.txt");
 
+        //text field name.get text
+
 
 
 

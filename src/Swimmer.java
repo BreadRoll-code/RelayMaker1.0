@@ -10,12 +10,12 @@ public class Swimmer {
     private double oneHundredBack;
     private double oneHundredBreast;
     private double oneHundredFree;
-    private boolean injured;
-    private boolean primary;
-    private boolean mustSwimFly;
-    private boolean mustSwimBack;
-    private boolean mustSwimBreast;
-    private boolean mustSwimFree;
+    private int injured;
+    private int primary;
+    private int mustSwimFly;
+    private int mustSwimBack;
+    private int mustSwimBreast;
+    private int mustSwimFree;
 
     
     //Sets variables
