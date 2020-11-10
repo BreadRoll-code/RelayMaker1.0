@@ -34,7 +34,7 @@ public class addSwimmer extends Swimmer {
             swimmer.setName(text1.getText(), text2.getText());
             box.setVisible(false);
             try {
-                info.saveInfo(getFirstName() + "" + getLastName(), "name.txt");
+                info.saveInfo(text1.getText() + " " + text2.getText(), "name.txt");
             } catch (IOException e) {
                 e.printStackTrace();
             }
