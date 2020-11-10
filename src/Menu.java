@@ -33,6 +33,24 @@ public class Menu {
         MenuBox.setVisible(true);
         MenuBox.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+        MenuButton1.addActionListener(arg0 -> {
+            MenuBox.setVisible(false);
+            try {
+                addSwimmer.addGUI();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
+        MenuButton2.addActionListener(arg0 -> {
+            MenuBox.setVisible(false);
+            try {
+                addSwimmer.addGUI();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
     }
 }
 
