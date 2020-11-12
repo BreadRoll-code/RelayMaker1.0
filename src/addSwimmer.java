@@ -5,6 +5,9 @@ public class addSwimmer extends Swimmer {
     static void addGUI() throws IOException {
 
         SaveInfo info = new SaveInfo();
+
+
+        //Creation of Box
         JFrame box = new JFrame("frame");
         box.setBounds(150,100,1000,500);
 
@@ -60,12 +63,15 @@ public class addSwimmer extends Swimmer {
         box.add(AgeText);
         box.add(GroupText);
         box.add(GenderText);
+
+        //Makes close on exit and sets visible
         box.setLayout(null);
         box.setVisible(true);
         box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         Swimmer swimmer = new Swimmer();
 
+        //When button is pressed all information in text fields is saved to .txt files
         Button1.addActionListener(arg0 -> {
             swimmer.setName(NameText1.getText(), NameText2.getText());
             box.setVisible(false);
