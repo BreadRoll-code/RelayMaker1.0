@@ -1,21 +1,21 @@
 public class Swimmer {
 
-    //Swimmer variables
+    //TODO Swimmer variables
     private static String firstName;
     private static String lastName;
     private static int age;
     private static String group;
     private static int gender;
-    private double oneHundredFly;
-    private double oneHundredBack;
-    private double oneHundredBreast;
-    private double oneHundredFree;
-    private int injured;
-    private int primary;
-    private int mustSwimFly;
-    private int mustSwimBack;
-    private int mustSwimBreast;
-    private int mustSwimFree;
+    private static double oneHundredFly;
+    private static double oneHundredBack;
+    private static double oneHundredBreast;
+    private static double oneHundredFree;
+    private static int injured;
+    private static int primary;
+    private static int mustSwimFly;
+    private static int mustSwimBack;
+    private static int mustSwimBreast;
+    private static int mustSwimFree;
 
     
     //Sets variables
@@ -24,15 +24,15 @@ public class Swimmer {
         this.lastName = lastName;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
-    }
+    public void setAge(Integer age) { this.age = age;}
 
-    public void setGroup(String group) {
-        this.group = group;
-    }
+    public void setGroup(String group) { this.group = group;}
 
-    protected void setGender(Integer gender) { this.gender = gender;}
+    public void setGender(Integer gender) { this.gender = gender;}
+
+    public void setOneHundredFly(Double timeFly) { this.oneHundredFly = timeFly;}
+
+    public void setOneHundredBack(Double timeBack) { this.oneHundredBack = timeBack;}
 
     //Output variables
     public static String getFirstName() {
@@ -55,6 +55,11 @@ public class Swimmer {
         return gender;
     }
 
+    public static Double getOneHundredFly() {
+        return oneHundredFly;
+    }
 
-    //TODO Find number of lines in random access file and add to the end of it
+    public static Double getOneHundredBack() {
+        return oneHundredFly;
+    }
 }
