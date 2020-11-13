@@ -25,6 +25,8 @@ public class RelayMaker extends Swimmer {
         Integer ge = Integer.parseInt(in.nextLine());
         System.out.println("hundred fly please");
         Double hf = Double.parseDouble(in.nextLine());
+        System.out.println("hundred back please");
+        Double hb = Double.parseDouble(in.nextLine());
 
         //Setters (console)
         swimmer.setName(n, ln);
@@ -32,6 +34,7 @@ public class RelayMaker extends Swimmer {
         swimmer.setGroup(g);
         swimmer.setGender(ge);
         swimmer.setOneHundredFly(hf);
+        swimmer.setOneHundredBack(hb);
 
         //Calls save info
         SaveInfo info = new SaveInfo();

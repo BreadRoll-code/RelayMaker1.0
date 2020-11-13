@@ -60,6 +60,6 @@ public class Swimmer {
     }
 
     public static Double getOneHundredBack() {
-        return oneHundredFly;
+        return oneHundredBack;
     }
 }

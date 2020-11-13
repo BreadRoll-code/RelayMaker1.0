@@ -30,6 +30,12 @@ public class addSwimmer extends Swimmer {
         JLabel Label6 = new JLabel("Gender");
         Label6.setBounds(50,310,75,100);
 
+        JLabel Label7 = new JLabel("Hundred Fly Time");
+        Label7.setBounds(400,110,250,100);
+
+        JLabel Label8 = new JLabel("Hundred Back Time");
+        Label8.setBounds(400,160,250,100);
+
         //Creation of Text Fields
         JTextField NameText1 = new JTextField();
         NameText1.setBounds(125, 150, 100, 25);
@@ -46,6 +52,12 @@ public class addSwimmer extends Swimmer {
         JTextField GenderText = new JTextField();
         GenderText.setBounds(125, 350, 100, 25);
 
+        JTextField HundredFlyText = new JTextField();
+        HundredFlyText.setBounds(525, 150, 100, 25);
+
+        JTextField HundredBackText = new JTextField();
+        HundredBackText.setBounds(525, 200, 100, 25);
+
         //Creation of Button
         JButton Button1 = new JButton("Create Swimmer");
         Button1.setBounds(800,350,150,50);
@@ -57,12 +69,18 @@ public class addSwimmer extends Swimmer {
         box.add(Label4);
         box.add(Label5);
         box.add(Label6);
+        box.add(Label7);
+        box.add(Label8);
+
         box.add(Button1);
+
         box.add(NameText1);
         box.add(NameText2);
         box.add(AgeText);
         box.add(GroupText);
         box.add(GenderText);
+        box.add(HundredFlyText);
+        box.add(HundredBackText);
 
         //Makes close on exit and sets visible
         box.setLayout(null);
