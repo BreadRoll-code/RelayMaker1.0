@@ -27,6 +27,10 @@ public class RelayMaker extends Swimmer {
         Double hf = Double.parseDouble(in.nextLine());
         System.out.println("hundred back please");
         Double hb = Double.parseDouble(in.nextLine());
+        System.out.println("hundred breast please");
+        Double hbr = Double.parseDouble(in.nextLine());
+        System.out.println("hundred free please");
+        Double hfr = Double.parseDouble(in.nextLine());
 
         //Setters (console)
         swimmer.setName(n, ln);
@@ -35,15 +39,19 @@ public class RelayMaker extends Swimmer {
         swimmer.setGender(ge);
         swimmer.setOneHundredFly(hf);
         swimmer.setOneHundredBack(hb);
+        swimmer.setOneHundredBreast(hbr);
+        swimmer.setOneHundredFree(hfr);
 
         //Calls save info
         SaveInfo info = new SaveInfo();
         info.saveInfo(getFirstName() + " " + getLastName(),"name.txt");
         info.saveInfo(String.valueOf(getAge()), "age.txt");
-        info.saveInfo(getGroup(), "group.txt");
+        info.saveInfo(String.valueOf(getGroup()), "group.txt");
         info.saveInfo(String.valueOf(getGender()), "gender.txt");
         info.saveInfo(String.valueOf(getOneHundredFly()), "100fly.txt");
         info.saveInfo(String.valueOf(getOneHundredBack()), "100back.txt");
+        info.saveInfo(String.valueOf(getOneHundredBreast()), "100breast.txt");
+        info.saveInfo(String.valueOf(getOneHundredFree()), "100free.txt");
 
         //text field name.get text
 

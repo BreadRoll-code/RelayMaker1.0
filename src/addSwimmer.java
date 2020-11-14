@@ -30,11 +30,17 @@ public class addSwimmer extends Swimmer {
         JLabel Label6 = new JLabel("Gender");
         Label6.setBounds(50,310,75,100);
 
-        JLabel Label7 = new JLabel("Hundred Fly Time");
+        JLabel Label7 = new JLabel("100 Fly Time");
         Label7.setBounds(400,110,250,100);
 
-        JLabel Label8 = new JLabel("Hundred Back Time");
+        JLabel Label8 = new JLabel("100 Back Time");
         Label8.setBounds(400,160,250,100);
+
+        JLabel Label9 = new JLabel("100 Breast Time");
+        Label9.setBounds(400,210,250,100);
+
+        JLabel Label10 = new JLabel("100 Free Time");
+        Label10.setBounds(400,260,250,100);
 
         //Creation of Text Fields
         JTextField NameText1 = new JTextField();
@@ -58,6 +64,12 @@ public class addSwimmer extends Swimmer {
         JTextField HundredBackText = new JTextField();
         HundredBackText.setBounds(525, 200, 100, 25);
 
+        JTextField HundredBreastText = new JTextField();
+        HundredBreastText.setBounds(525, 250, 100, 25);
+
+        JTextField HundredFreeText = new JTextField();
+        HundredFreeText.setBounds(525, 300, 100, 25);
+
         //Creation of Button
         JButton Button1 = new JButton("Create Swimmer");
         Button1.setBounds(800,350,150,50);
@@ -71,6 +83,8 @@ public class addSwimmer extends Swimmer {
         box.add(Label6);
         box.add(Label7);
         box.add(Label8);
+        box.add(Label9);
+        box.add(Label10);
 
         box.add(Button1);
 
@@ -81,6 +95,8 @@ public class addSwimmer extends Swimmer {
         box.add(GenderText);
         box.add(HundredFlyText);
         box.add(HundredBackText);
+        box.add(HundredBreastText);
+        box.add(HundredFreeText);
 
         //Makes close on exit and sets visible
         box.setLayout(null);
@@ -121,6 +137,33 @@ public class addSwimmer extends Swimmer {
                 e.printStackTrace();
             }
 
+            swimmer.setOneHundredFly(Double.parseDouble(HundredFlyText.getText()));
+            try {
+                info.saveInfo(HundredFlyText.getText(), "100fly.txt");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            swimmer.setOneHundredBack(Double.parseDouble(HundredBackText.getText()));
+            try {
+                info.saveInfo(HundredBackText.getText(), "100back.txt");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            swimmer.setOneHundredBreast(Double.parseDouble(HundredBreastText.getText()));
+            try {
+                info.saveInfo(HundredBreastText.getText(), "100breast.txt");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            swimmer.setOneHundredFree(Double.parseDouble(HundredFreeText.getText()));
+            try {
+                info.saveInfo(HundredFreeText.getText(), "100free.txt");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
     }
 }

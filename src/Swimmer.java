@@ -34,6 +34,10 @@ public class Swimmer {
 
     public void setOneHundredBack(Double timeBack) { this.oneHundredBack = timeBack;}
 
+    public void setOneHundredBreast(Double timeBreast) { this.oneHundredBreast = timeBreast;}
+
+    public void setOneHundredFree(Double timeFree) { this.oneHundredFree = timeFree;}
+
     //Output variables
     public static String getFirstName() {
         return firstName;
@@ -61,5 +65,13 @@ public class Swimmer {
 
     public static Double getOneHundredBack() {
         return oneHundredBack;
+    }
+
+    public static Double getOneHundredBreast() {
+        return oneHundredBreast;
+    }
+
+    public static Double getOneHundredFree() {
+        return oneHundredFree;
     }
 }
