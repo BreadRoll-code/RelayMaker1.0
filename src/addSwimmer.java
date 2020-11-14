@@ -42,6 +42,9 @@ public class addSwimmer extends Swimmer {
         JLabel Label10 = new JLabel("100 Free Time");
         Label10.setBounds(400,260,250,100);
 
+        JLabel Label11 = new JLabel("Cannot Swim:");
+        Label11.setBounds(400,310,250,100);
+
         //Creation of Text Fields
         JTextField NameText1 = new JTextField();
         NameText1.setBounds(125, 150, 100, 25);
@@ -74,6 +77,12 @@ public class addSwimmer extends Swimmer {
         JButton Button1 = new JButton("Create Swimmer");
         Button1.setBounds(800,350,150,50);
 
+        //Creation of Drop Down Menu
+        String[] strokes = {"Can swim all strokes", "Fly", "Back", "Breast", "Free"};
+        JComboBox MustSwimX = new JComboBox(strokes);
+        MustSwimX.setBounds(500,350,150,25);
+        MustSwimX.setSelectedIndex(0);
+
         //Adding to Box
         box.add(Label1);
         box.add(Label2);
@@ -85,8 +94,10 @@ public class addSwimmer extends Swimmer {
         box.add(Label8);
         box.add(Label9);
         box.add(Label10);
+        box.add(Label11);
 
         box.add(Button1);
+        box.add(MustSwimX);
 
         box.add(NameText1);
         box.add(NameText2);
