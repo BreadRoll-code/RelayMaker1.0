@@ -175,6 +175,67 @@ public class addSwimmer extends Swimmer {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+            if (MustSwimX.getSelectedIndex() == 1) { swimmer.setMustSwimFly(MustSwimX.getSelectedIndex());
+            try {
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                } catch (IOException e) {
+                e.printStackTrace();
+                }
+            }
+
+            else if (MustSwimX.getSelectedIndex() == 2) {swimmer.setMustSwimBack(MustSwimX.getSelectedIndex());
+            try {
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                } catch (IOException e) {
+                e.printStackTrace();
+                }
+            }
+
+            else if (MustSwimX.getSelectedIndex() == 3) {swimmer.setMustSwimBreast(MustSwimX.getSelectedIndex());
+            try {
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (MustSwimX.getSelectedIndex() == 4) {swimmer.setMustSwimFree(MustSwimX.getSelectedIndex());
+            try {
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (MustSwimX.getSelectedIndex() == 0) { swimmer.setMustSwimFree(MustSwimX.getSelectedIndex());
+            try {
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
         });
     }
 }

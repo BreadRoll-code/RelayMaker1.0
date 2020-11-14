@@ -52,6 +52,11 @@ public class RelayMaker extends Swimmer {
         info.saveInfo(String.valueOf(getOneHundredBack()), "100back.txt");
         info.saveInfo(String.valueOf(getOneHundredBreast()), "100breast.txt");
         info.saveInfo(String.valueOf(getOneHundredFree()), "100free.txt");
+        info.saveInfo(String.valueOf(getMustSwimFly()), "mustswimfly.txt");
+        info.saveInfo(String.valueOf(getMustSwimBack()), "mustswimback.txt");
+        info.saveInfo(String.valueOf(getMustSwimBreast()), "mustswimbreast.txt");
+        info.saveInfo(String.valueOf(getMustSwimFree()), "mustswimfree.txt");
+        info.saveInfo(String.valueOf(getCanSwimAll()), "canswimall.txt");
 
         //text field name.get text
 

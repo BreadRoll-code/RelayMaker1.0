@@ -18,6 +18,19 @@ public class SaveInfo {
 
     }
 
+    void saveInfoInt(int info, String filePath) throws IOException {
+        File file = new File(filePath);
+        RandomAccessFile raf = new RandomAccessFile(file, "rw");
+        if (raf.length() == 0) {
+            raf.seek(0);
+            raf.writeBytes(String.valueOf(info));
+        } else {
+            raf.seek(raf.length());
+            raf.writeBytes("\n" + info);
+        }
+
+    }
+
     static Integer position(Integer line, String filePath) throws IOException {
         File file = new File(filePath);
         RandomAccessFile raf = new RandomAccessFile(file, "rw");

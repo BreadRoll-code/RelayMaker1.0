@@ -16,6 +16,7 @@ public class Swimmer {
     private static int mustSwimBack;
     private static int mustSwimBreast;
     private static int mustSwimFree;
+    private static int canSwimAll;
 
     
     //Sets variables
@@ -37,6 +38,16 @@ public class Swimmer {
     public void setOneHundredBreast(Double timeBreast) { this.oneHundredBreast = timeBreast;}
 
     public void setOneHundredFree(Double timeFree) { this.oneHundredFree = timeFree;}
+
+    public void setMustSwimFly(Integer mustSwimFly) {this.mustSwimFly = mustSwimFly;}
+
+    public void setMustSwimBack(Integer mustSwimBack) {this.mustSwimBack = mustSwimBack;}
+
+    public void setMustSwimBreast(Integer mustSwimBreast) {this.mustSwimBreast = mustSwimBreast;}
+
+    public void setMustSwimFree(Integer mustSwimFree) {this.mustSwimFree = mustSwimFree;}
+
+    public void setCanSwimAll(Integer canSwimAll) {this.canSwimAll = canSwimAll;}
 
     //Output variables
     public static String getFirstName() {
@@ -73,5 +84,25 @@ public class Swimmer {
 
     public static Double getOneHundredFree() {
         return oneHundredFree;
+    }
+
+    public static Integer getMustSwimFly() {
+        return mustSwimFly;
+    }
+
+    public static Integer getMustSwimBack() {
+        return mustSwimBack;
+    }
+
+    public static Integer getMustSwimBreast() {
+        return mustSwimBreast;
+    }
+
+    public static Integer getMustSwimFree() {
+        return mustSwimFree;
+    }
+
+    public static Integer getCanSwimAll() {
+        return canSwimAll;
     }
 }
