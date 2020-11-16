@@ -40,11 +40,7 @@ public class Menu {
         //When buttons are pressed respective screen is displayed
         MenuButton1.addActionListener(arg0 -> {
             MenuBox.setVisible(false);
-            try {
-                addSwimmer.addGUI();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            createRelay.addGUI();
         });
 
         MenuButton2.addActionListener(arg0 -> {
