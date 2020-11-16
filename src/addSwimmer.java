@@ -178,11 +178,7 @@ public class addSwimmer extends Swimmer {
 
             if (MustSwimX.getSelectedIndex() == 1) { swimmer.setMustSwimFly(MustSwimX.getSelectedIndex());
             try {
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
                 e.printStackTrace();
                 }
@@ -190,11 +186,7 @@ public class addSwimmer extends Swimmer {
 
             else if (MustSwimX.getSelectedIndex() == 2) {swimmer.setMustSwimBack(MustSwimX.getSelectedIndex());
             try {
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
                 e.printStackTrace();
                 }
@@ -202,11 +194,7 @@ public class addSwimmer extends Swimmer {
 
             else if (MustSwimX.getSelectedIndex() == 3) {swimmer.setMustSwimBreast(MustSwimX.getSelectedIndex());
             try {
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -214,11 +202,7 @@ public class addSwimmer extends Swimmer {
 
             else if (MustSwimX.getSelectedIndex() == 4) {swimmer.setMustSwimFree(MustSwimX.getSelectedIndex());
             try {
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -226,11 +210,7 @@ public class addSwimmer extends Swimmer {
 
             else if (MustSwimX.getSelectedIndex() == 0) { swimmer.setMustSwimFree(MustSwimX.getSelectedIndex());
             try {
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfly.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimback.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimbreast.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimfree.txt");
-                info.saveInfoInt(MustSwimX.getSelectedIndex(), "canswimall.txt");
+                info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
