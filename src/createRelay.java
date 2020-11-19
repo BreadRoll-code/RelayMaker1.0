@@ -47,6 +47,17 @@ public class createRelay {
         //Drop Down Menu (Gender)
 
         //Add primary checkbox
+        JCheckBox PrimaryOne = new JCheckBox();
+        PrimaryOne.setBounds(430, 320, 60, 25);
+
+        JCheckBox PrimaryTwo = new JCheckBox();
+        PrimaryTwo.setBounds(430, 350, 60, 25);
+
+        JCheckBox PrimaryThree = new JCheckBox();
+        PrimaryThree.setBounds(430, 380, 60, 25);
+
+        JCheckBox PrimaryFour = new JCheckBox();
+        PrimaryFour.setBounds(430, 410, 60, 25);
 
         //Creation of Labels
         JLabel Label1 = new JLabel("Relay Creation");
@@ -70,6 +81,21 @@ public class createRelay {
         JLabel Label7 = new JLabel("Swimmer 4");
         Label7.setBounds(160,370,200,100);
 
+        JLabel Label8 = new JLabel("Primary:");
+        Label8.setBounds(315,250,200,100);
+
+        JLabel Label9 = new JLabel("Swimmer 1");
+        Label9.setBounds(350,280,200,100);
+
+        JLabel Label10 = new JLabel("Swimmer 2");
+        Label10.setBounds(350,310,200,100);
+
+        JLabel Label11 = new JLabel("Swimmer 3");
+        Label11.setBounds(350,340,200,100);
+
+        JLabel Label12 = new JLabel("Swimmer 4");
+        Label12.setBounds(350,370,200,100);
+
 
         //Adding to Box
         RelayBox.add(Label1);
@@ -79,6 +105,11 @@ public class createRelay {
         RelayBox.add(Label5);
         RelayBox.add(Label6);
         RelayBox.add(Label7);
+        RelayBox.add(Label8);
+        RelayBox.add(Label9);
+        RelayBox.add(Label10);
+        RelayBox.add(Label11);
+        RelayBox.add(Label12);
 
         RelayBox.add(FirstNameText1);
         RelayBox.add(FirstNameText2);
@@ -91,6 +122,11 @@ public class createRelay {
         RelayBox.add(AgeSwimmer2);
         RelayBox.add(AgeSwimmer3);
         RelayBox.add(AgeSwimmer4);
+
+        RelayBox.add(PrimaryOne);
+        RelayBox.add(PrimaryTwo);
+        RelayBox.add(PrimaryThree);
+        RelayBox.add(PrimaryFour);
 
         //Makes close on exit and sets visible
         RelayBox.setLayout(null);
