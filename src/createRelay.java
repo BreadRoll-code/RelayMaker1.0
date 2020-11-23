@@ -45,6 +45,31 @@ public class createRelay {
 
 
         //Drop Down Menu (Gender)
+        String[] strokes1 = {"Any Gender", "Male", "Female"};
+        JComboBox SwimmerOneGender = new JComboBox(strokes1);
+        SwimmerOneGender.setBounds(620,320,100,25);
+        SwimmerOneGender.setSelectedIndex(0);
+
+        String[] strokes2 = {"Any Gender", "Male", "Female"};
+        JComboBox SwimmerTwoGender = new JComboBox(strokes2);
+        SwimmerTwoGender.setBounds(620,350,100,25);
+        SwimmerTwoGender.setSelectedIndex(0);
+
+        String[] strokes3 = {"Any Gender", "Male", "Female"};
+        JComboBox SwimmerThreeGender = new JComboBox(strokes3);
+        SwimmerThreeGender.setBounds(620,380,100,25);
+        SwimmerThreeGender.setSelectedIndex(0);
+
+        String[] strokes4 = {"Any Gender", "Male", "Female"};
+        JComboBox SwimmerFourGender = new JComboBox(strokes4);
+        SwimmerFourGender.setBounds(620,410,100,25);
+        SwimmerFourGender.setSelectedIndex(0);
+
+        String[] strokes5 = {"100 IM", "100 Butterfly", "100 Backstroke", "100 Breaststroke", "100 Freestlye"};
+        JComboBox typeOfRace = new JComboBox(strokes5);
+        typeOfRace.setBounds(400,150,150,25);
+        typeOfRace.setSelectedIndex(0);
+
 
         //Add primary checkbox
         JCheckBox PrimaryOne = new JCheckBox();
@@ -96,6 +121,24 @@ public class createRelay {
         JLabel Label12 = new JLabel("Swimmer 4");
         Label12.setBounds(350,370,200,100);
 
+        JLabel Label13 = new JLabel("Gender:");
+        Label13.setBounds(505,250,200,100);
+
+        JLabel Label14 = new JLabel("Swimmer 1");
+        Label14.setBounds(540,280,200,100);
+
+        JLabel Label15 = new JLabel("Swimmer 2");
+        Label15.setBounds(540,310,200,100);
+
+        JLabel Label16 = new JLabel("Swimmer 3");
+        Label16.setBounds(540,340,200,100);
+
+        JLabel Label17 = new JLabel("Swimmer 4");
+        Label17.setBounds(540,370,200,100);
+
+        JLabel Label18 = new JLabel("Type of Race:");
+        Label18.setBounds(370,75,200,100);
+
 
         //Adding to Box
         RelayBox.add(Label1);
@@ -110,6 +153,12 @@ public class createRelay {
         RelayBox.add(Label10);
         RelayBox.add(Label11);
         RelayBox.add(Label12);
+        RelayBox.add(Label13);
+        RelayBox.add(Label14);
+        RelayBox.add(Label15);
+        RelayBox.add(Label16);
+        RelayBox.add(Label17);
+        RelayBox.add(Label18);
 
         RelayBox.add(FirstNameText1);
         RelayBox.add(FirstNameText2);
@@ -127,6 +176,12 @@ public class createRelay {
         RelayBox.add(PrimaryTwo);
         RelayBox.add(PrimaryThree);
         RelayBox.add(PrimaryFour);
+
+        RelayBox.add(SwimmerOneGender);
+        RelayBox.add(SwimmerTwoGender);
+        RelayBox.add(SwimmerThreeGender);
+        RelayBox.add(SwimmerFourGender);
+        RelayBox.add(typeOfRace);
 
         //Makes close on exit and sets visible
         RelayBox.setLayout(null);

@@ -10,8 +10,6 @@ public class Swimmer {
     private static double oneHundredBack;
     private static double oneHundredBreast;
     private static double oneHundredFree;
-    private static int injured;
-    private static int primary;
     private static int mustSwimFly;
     private static int mustSwimBack;
     private static int mustSwimBreast;
