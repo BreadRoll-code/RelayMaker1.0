@@ -65,7 +65,7 @@ public class createRelay {
         SwimmerFourGender.setBounds(620,410,100,25);
         SwimmerFourGender.setSelectedIndex(0);
 
-        String[] strokes5 = {"100 IM", "100 Butterfly", "100 Backstroke", "100 Breaststroke", "100 Freestlye"};
+        String[] strokes5 = {"400 IM", "100 Butterfly", "100 Backstroke", "100 Breaststroke", "100 Freestlye"};
         JComboBox typeOfRace = new JComboBox(strokes5);
         typeOfRace.setBounds(400,150,150,25);
         typeOfRace.setSelectedIndex(0);
@@ -139,6 +139,18 @@ public class createRelay {
         JLabel Label18 = new JLabel("Type of Race:");
         Label18.setBounds(370,75,200,100);
 
+        JLabel Label19 = new JLabel("1");
+        Label19.setBounds(100, 110, 200, 100);
+
+        JLabel Label20 = new JLabel("2");
+        Label20.setBounds(100, 160, 200, 100);
+
+        JLabel Label21 = new JLabel("3");
+        Label21.setBounds(100, 210, 200, 100);
+
+        //Creation of Button
+        JButton CreateRelay = new JButton("Create Relay");
+        CreateRelay.setBounds(775,350,150,50);;
 
         //Adding to Box
         RelayBox.add(Label1);
@@ -159,6 +171,9 @@ public class createRelay {
         RelayBox.add(Label16);
         RelayBox.add(Label17);
         RelayBox.add(Label18);
+        RelayBox.add(Label19);
+        RelayBox.add(Label20);
+        RelayBox.add(Label21);
 
         RelayBox.add(FirstNameText1);
         RelayBox.add(FirstNameText2);
@@ -182,6 +197,8 @@ public class createRelay {
         RelayBox.add(SwimmerThreeGender);
         RelayBox.add(SwimmerFourGender);
         RelayBox.add(typeOfRace);
+
+        RelayBox.add(CreateRelay);
 
         //Makes close on exit and sets visible
         RelayBox.setLayout(null);
