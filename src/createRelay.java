@@ -205,7 +205,17 @@ public class createRelay {
         RelayBox.setVisible(true);
         RelayBox.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        Swimmer swimmer = new Swimmer();
+
+        CreateRelay.addActionListener(arg0 -> {
+            Relay relay = new Relay();
+            if (FirstNameText1.getText().equals("") && LastNameText1.getText().equals("")) {
+                relay.setSwimmer1(FirstNameText1.getText() + " " + LastNameText1);}
+            if (FirstNameText2.getText().equals("") && LastNameText2.getText().equals("")) {
+                relay.setSwimmer1(FirstNameText2.getText() + " " + LastNameText2);}
+            if (FirstNameText3.getText().equals("") && LastNameText3.getText().equals("")) {
+                relay.setSwimmer1(FirstNameText3.getText() + " " + LastNameText3);}
+
+        });
 
         //Reads info function
 

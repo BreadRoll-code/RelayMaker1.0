@@ -15,13 +15,9 @@ public class Relay {
     public Integer RaceChosen;
 
     //Sets variables
-    public void setSwimmer1(String swimmer1) {
-        Swimmer1 = swimmer1;
-    }
+    public void setSwimmer1(String swimmer1) { Swimmer1 = swimmer1; }
 
-    public void setSwimmer2(String swimmer2) {
-        Swimmer2 = swimmer2;
-    }
+    public void setSwimmer2(String swimmer2) { Swimmer2 = swimmer2; }
 
     public void setSwimmer3(String swimmer3) { Swimmer3 = swimmer3; }
 
