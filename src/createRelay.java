@@ -70,6 +70,11 @@ public class createRelay {
         typeOfRace.setBounds(400,150,150,25);
         typeOfRace.setSelectedIndex(0);
 
+        String[] strokes6 = {"No Primary Swimmer", "Swimmer one", "Swimmer two", "Swimmer three", "Swimmer four"};
+        JComboBox Primary = new JComboBox(strokes6);
+        Primary.setBounds(400,150,150,25);
+        Primary.setSelectedIndex(0);
+
 
         //Add primary checkbox
         JCheckBox PrimaryOne = new JCheckBox();
@@ -197,6 +202,7 @@ public class createRelay {
         RelayBox.add(SwimmerThreeGender);
         RelayBox.add(SwimmerFourGender);
         RelayBox.add(typeOfRace);
+        RelayBox.add(Primary);
 
         RelayBox.add(CreateRelay);
 
