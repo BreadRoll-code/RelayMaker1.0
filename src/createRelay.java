@@ -1,3 +1,5 @@
+import com.sun.jdi.StringReference;
+
 import javax.swing.*;
 import javax.swing.text.rtf.RTFEditorKit;
 import java.io.IOException;
@@ -22,6 +24,9 @@ public class createRelay {
         JTextField FirstNameText3 = new JTextField();
         FirstNameText3.setBounds(125, 250, 100, 25);
 
+        JTextField FirstNameText4 = new JTextField();
+        FirstNameText4.setBounds(125, 300, 100, 25);
+
         JTextField LastNameText1 = new JTextField();
         LastNameText1.setBounds(240, 150, 100, 25);
 
@@ -31,63 +36,48 @@ public class createRelay {
         JTextField LastNameText3 = new JTextField();
         LastNameText3.setBounds(240, 250, 100, 25);
 
+        JTextField LastNameText4 = new JTextField();
+        LastNameText4.setBounds(240, 300, 100, 25);
+
         JTextField AgeSwimmer1 = new JTextField();
-        AgeSwimmer1.setBounds(250, 320, 30, 25);
+        AgeSwimmer1.setBounds(485, 145, 30, 25);
 
         JTextField AgeSwimmer2 = new JTextField();
-        AgeSwimmer2.setBounds(250, 350, 30, 25);
+        AgeSwimmer2.setBounds(485, 175, 30, 25);
 
         JTextField AgeSwimmer3 = new JTextField();
-        AgeSwimmer3.setBounds(250, 380, 30, 25);
+        AgeSwimmer3.setBounds(485, 205, 30, 25);
 
         JTextField AgeSwimmer4 = new JTextField();
-        AgeSwimmer4.setBounds(250, 410, 30, 25);
+        AgeSwimmer4.setBounds(485, 245, 30, 25);
 
 
         //Drop Down Menu (Gender)
-        String[] strokes1 = {"Any Gender", "Male", "Female"};
-        JComboBox SwimmerOneGender = new JComboBox(strokes1);
+        JComboBox SwimmerOneGender = new JComboBox(new String[]{"Any Gender", "Male", "Female"});
         SwimmerOneGender.setBounds(620,320,100,25);
         SwimmerOneGender.setSelectedIndex(0);
 
-        String[] strokes2 = {"Any Gender", "Male", "Female"};
-        JComboBox SwimmerTwoGender = new JComboBox(strokes2);
+        JComboBox SwimmerTwoGender = new JComboBox(new String[]{"Any Gender", "Male", "Female"});
         SwimmerTwoGender.setBounds(620,350,100,25);
         SwimmerTwoGender.setSelectedIndex(0);
 
-        String[] strokes3 = {"Any Gender", "Male", "Female"};
-        JComboBox SwimmerThreeGender = new JComboBox(strokes3);
+        JComboBox SwimmerThreeGender = new JComboBox(new String[]{"Any Gender", "Male", "Female"});
         SwimmerThreeGender.setBounds(620,380,100,25);
         SwimmerThreeGender.setSelectedIndex(0);
 
-        String[] strokes4 = {"Any Gender", "Male", "Female"};
-        JComboBox SwimmerFourGender = new JComboBox(strokes4);
+        JComboBox SwimmerFourGender = new JComboBox(new String[]{"Any Gender", "Male", "Female"});
         SwimmerFourGender.setBounds(620,410,100,25);
         SwimmerFourGender.setSelectedIndex(0);
 
-        String[] strokes5 = {"400 IM", "100 Butterfly", "100 Backstroke", "100 Breaststroke", "100 Freestlye"};
-        JComboBox typeOfRace = new JComboBox(strokes5);
+        String[] Long = {"400 IM", "100 Butterfly", "100 Backstroke", "100 Breaststroke", "100 Freestlye"};
+        JComboBox typeOfRace = new JComboBox(Long);
         typeOfRace.setBounds(400,150,150,25);
         typeOfRace.setSelectedIndex(0);
 
-        String[] strokes6 = {"No Primary Swimmer", "Swimmer one", "Swimmer two", "Swimmer three", "Swimmer four"};
-        JComboBox Primary = new JComboBox(strokes6);
-        Primary.setBounds(400,150,150,25);
+        String[] AlsoLong = {"No Primary Swimmer", "Swimmer one", "Swimmer two", "Swimmer three", "Swimmer four"};
+        JComboBox Primary = new JComboBox(AlsoLong);
+        Primary.setBounds(400,250,150,25);
         Primary.setSelectedIndex(0);
-
-
-        //Add primary checkbox
-        JCheckBox PrimaryOne = new JCheckBox();
-        PrimaryOne.setBounds(430, 320, 60, 25);
-
-        JCheckBox PrimaryTwo = new JCheckBox();
-        PrimaryTwo.setBounds(430, 350, 60, 25);
-
-        JCheckBox PrimaryThree = new JCheckBox();
-        PrimaryThree.setBounds(430, 380, 60, 25);
-
-        JCheckBox PrimaryFour = new JCheckBox();
-        PrimaryFour.setBounds(430, 410, 60, 25);
 
         //Creation of Labels
         JLabel Label1 = new JLabel("Relay Creation");
@@ -97,34 +87,34 @@ public class createRelay {
         Label2.setBounds(125,75,200,100);
 
         JLabel Label3 = new JLabel("Ages:");
-        Label3.setBounds(125,250,200,100);
+        Label3.setBounds(370,75,200,100);
 
         JLabel Label4 = new JLabel("Swimmer 1");
-        Label4.setBounds(160,280,200,100);
+        Label4.setBounds(405,105,200,100);
 
         JLabel Label5 = new JLabel("Swimmer 2");
-        Label5.setBounds(160,310,200,100);
+        Label5.setBounds(405,135,200,100);
 
         JLabel Label6 = new JLabel("Swimmer 3");
-        Label6.setBounds(160,340,200,100);
+        Label6.setBounds(405,165,200,100);
 
         JLabel Label7 = new JLabel("Swimmer 4");
-        Label7.setBounds(160,370,200,100);
+        Label7.setBounds(405,195,200,100);
 
         JLabel Label8 = new JLabel("Primary:");
-        Label8.setBounds(315,250,200,100);
+        Label8.setBounds(350,150,200,100);
 
         JLabel Label9 = new JLabel("Swimmer 1");
-        Label9.setBounds(350,280,200,100);
+        Label9.setBounds(385,180,200,100);
 
         JLabel Label10 = new JLabel("Swimmer 2");
-        Label10.setBounds(350,310,200,100);
+        Label10.setBounds(385,210,200,100);
 
         JLabel Label11 = new JLabel("Swimmer 3");
-        Label11.setBounds(350,340,200,100);
+        Label11.setBounds(385,240,200,100);
 
         JLabel Label12 = new JLabel("Swimmer 4");
-        Label12.setBounds(350,370,200,100);
+        Label12.setBounds(385,270,200,100);
 
         JLabel Label13 = new JLabel("Gender:");
         Label13.setBounds(505,250,200,100);
@@ -153,6 +143,9 @@ public class createRelay {
         JLabel Label21 = new JLabel("3");
         Label21.setBounds(100, 210, 200, 100);
 
+        JLabel Label22 = new JLabel("4");
+        Label22.setBounds(100, 260, 200, 100);
+
         //Creation of Button
         JButton CreateRelay = new JButton("Create Relay");
         CreateRelay.setBounds(775,350,150,50);;
@@ -165,11 +158,11 @@ public class createRelay {
         RelayBox.add(Label5);
         RelayBox.add(Label6);
         RelayBox.add(Label7);
-        RelayBox.add(Label8);
-        RelayBox.add(Label9);
-        RelayBox.add(Label10);
-        RelayBox.add(Label11);
-        RelayBox.add(Label12);
+        //RelayBox.add(Label8);
+        //RelayBox.add(Label9);
+        //RelayBox.add(Label10);
+        //RelayBox.add(Label11);
+        //RelayBox.add(Label12);
         RelayBox.add(Label13);
         RelayBox.add(Label14);
         RelayBox.add(Label15);
@@ -179,29 +172,27 @@ public class createRelay {
         RelayBox.add(Label19);
         RelayBox.add(Label20);
         RelayBox.add(Label21);
+        RelayBox.add(Label22);
 
         RelayBox.add(FirstNameText1);
         RelayBox.add(FirstNameText2);
         RelayBox.add(FirstNameText3);
+        RelayBox.add(FirstNameText4);
         RelayBox.add(LastNameText1);
         RelayBox.add(LastNameText2);
         RelayBox.add(LastNameText3);
+        RelayBox.add(LastNameText4);
 
         RelayBox.add(AgeSwimmer1);
         RelayBox.add(AgeSwimmer2);
         RelayBox.add(AgeSwimmer3);
         RelayBox.add(AgeSwimmer4);
 
-        RelayBox.add(PrimaryOne);
-        RelayBox.add(PrimaryTwo);
-        RelayBox.add(PrimaryThree);
-        RelayBox.add(PrimaryFour);
-
         RelayBox.add(SwimmerOneGender);
         RelayBox.add(SwimmerTwoGender);
         RelayBox.add(SwimmerThreeGender);
         RelayBox.add(SwimmerFourGender);
-        RelayBox.add(typeOfRace);
+        //RelayBox.add(typeOfRace);
         RelayBox.add(Primary);
 
         RelayBox.add(CreateRelay);
@@ -214,11 +205,11 @@ public class createRelay {
 
         CreateRelay.addActionListener(arg0 -> {
             Relay relay = new Relay();
-            if (FirstNameText1.getText().equals("") && LastNameText1.getText().equals("")) {
+            if (!FirstNameText1.getText().equals("") && !LastNameText1.getText().equals("")) {
                 relay.setSwimmer1(FirstNameText1.getText() + " " + LastNameText1);}
-            if (FirstNameText2.getText().equals("") && LastNameText2.getText().equals("")) {
+            if (!FirstNameText2.getText().equals("") && !LastNameText2.getText().equals("")) {
                 relay.setSwimmer1(FirstNameText2.getText() + " " + LastNameText2);}
-            if (FirstNameText3.getText().equals("") && LastNameText3.getText().equals("")) {
+            if (!FirstNameText3.getText().equals("") && !LastNameText3.getText().equals("")) {
                 relay.setSwimmer1(FirstNameText3.getText() + " " + LastNameText3);}
 
         });
