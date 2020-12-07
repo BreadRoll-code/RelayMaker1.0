@@ -187,9 +187,12 @@ public class createRelay {
         RelayBox.setVisible(true);
         RelayBox.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-
+        //Makes button do things
         CreateRelay.addActionListener(arg0 -> {
+
             Relay relay = new Relay();
+            SaveInfo info = new SaveInfo();
+
             if (!FirstNameText1.getText().equals("") && !LastNameText1.getText().equals("")) {
                 relay.setSwimmer1(FirstNameText1.getText() + " " + LastNameText1);}
             if (!FirstNameText2.getText().equals("") && !LastNameText2.getText().equals("")) {
@@ -198,8 +201,163 @@ public class createRelay {
                 relay.setSwimmer3(FirstNameText3.getText() + " " + LastNameText3);}
             if (!FirstNameText4.getText().equals("") && !LastNameText4.getText().equals("")) {
                 relay.setSwimmer4(FirstNameText4.getText() + " " + LastNameText4);}
+
             if (!AgeSwimmer1.getText().equals("")) {
                 relay.setSwimmerAge1(Integer.valueOf(AgeSwimmer1.getText()));}
+            if (!AgeSwimmer2.getText().equals("")) {
+                relay.setSwimmerAge2(Integer.valueOf(AgeSwimmer2.getText()));}
+            if (!AgeSwimmer3.getText().equals("")) {
+                relay.setSwimmerAge3(Integer.valueOf(AgeSwimmer3.getText()));}
+            if (!AgeSwimmer4.getText().equals("")) {
+                relay.setSwimmerAge4(Integer.valueOf(AgeSwimmer4.getText()));}
+
+            //Primary drop down
+            if (Primary.getSelectedIndex() == 1) { relay.setSwimmerPrimary(Primary.getSelectedIndex());
+                try {
+
+                    info.saveInfoInt(Primary.getSelectedIndex(), "primaryswimmer.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (Primary.getSelectedIndex() == 2) {relay.setSwimmerPrimary(Primary.getSelectedIndex());
+                try {
+                    info.saveInfoInt(Primary.getSelectedIndex(), "primaryswimmer.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (Primary.getSelectedIndex() == 3) {relay.setSwimmerPrimary(Primary.getSelectedIndex());
+                try {
+                    info.saveInfoInt(Primary.getSelectedIndex(), "primaryswimmer.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (Primary.getSelectedIndex() == 4) {relay.setSwimmerPrimary(Primary.getSelectedIndex());
+                try {
+                    info.saveInfoInt(Primary.getSelectedIndex(), "primaryswimmer.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (Primary.getSelectedIndex() == 0) {relay.setSwimmerPrimary(Primary.getSelectedIndex());
+                try {
+                    info.saveInfoInt(Primary.getSelectedIndex(), "primaryswimmer.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //Gender 1 drop down
+            if (SwimmerOneGender.getSelectedIndex() == 1) { relay.setSwimmerGender1(SwimmerOneGender.getSelectedIndex());
+                try {
+
+                    info.saveInfoInt(SwimmerOneGender.getSelectedIndex(), "genderswimmer1.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerOneGender.getSelectedIndex() == 2) {relay.setSwimmerGender1(SwimmerOneGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerOneGender.getSelectedIndex(), "genderswimmer1.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerOneGender.getSelectedIndex() == 0) {relay.setSwimmerGender1(SwimmerOneGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerOneGender.getSelectedIndex(), "genderswimmer1.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //Gender 2 drop down
+            if (SwimmerTwoGender.getSelectedIndex() == 1) { relay.setSwimmerGender2(SwimmerTwoGender.getSelectedIndex());
+                try {
+
+                    info.saveInfoInt(SwimmerTwoGender.getSelectedIndex(), "genderswimmer2.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerTwoGender.getSelectedIndex() == 2) {relay.setSwimmerGender2(SwimmerTwoGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerTwoGender.getSelectedIndex(), "genderswimmer2.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerTwoGender.getSelectedIndex() == 0) {relay.setSwimmerGender2(SwimmerTwoGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerTwoGender.getSelectedIndex(), "genderswimmer2.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //Gender 3 drop down
+            if (SwimmerThreeGender.getSelectedIndex() == 1) { relay.setSwimmerGender3(SwimmerThreeGender.getSelectedIndex());
+                try {
+
+                    info.saveInfoInt(SwimmerThreeGender.getSelectedIndex(), "genderswimmer3.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerThreeGender.getSelectedIndex() == 2) {relay.setSwimmerGender3(SwimmerThreeGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerThreeGender.getSelectedIndex(), "genderswimmer3.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerThreeGender.getSelectedIndex() == 0) {relay.setSwimmerGender3(SwimmerThreeGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerThreeGender.getSelectedIndex(), "genderswimmer3.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //Gender 4 drop down
+            if (SwimmerFourGender.getSelectedIndex() == 1) { relay.setSwimmerGender4(SwimmerFourGender.getSelectedIndex());
+                try {
+
+                    info.saveInfoInt(SwimmerFourGender.getSelectedIndex(), "genderswimmer4.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerFourGender.getSelectedIndex() == 2) {relay.setSwimmerGender4(SwimmerFourGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerFourGender.getSelectedIndex(), "genderswimmer4.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            else if (SwimmerFourGender.getSelectedIndex() == 0) {relay.setSwimmerGender4(SwimmerFourGender.getSelectedIndex());
+                try {
+                    info.saveInfoInt(SwimmerFourGender.getSelectedIndex(), "genderswimmer4.txt");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //
         });
 
         //Reads info function
