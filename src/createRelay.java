@@ -51,6 +51,10 @@ public class createRelay {
         JTextField AgeSwimmer4 = new JTextField();
         AgeSwimmer4.setBounds(485, 235, 30, 25);
 
+        JTextField RelayName = new JTextField();
+        RelayName.setBounds(700, 275, 100, 25);
+
+
 
         //Drop Down Menu (Gender)
         JComboBox SwimmerOneGender = new JComboBox(new String[]{"Any Gender", "Male", "Female"});
@@ -134,6 +138,9 @@ public class createRelay {
         JLabel Label18 = new JLabel("4");
         Label18.setBounds(100, 260, 200, 100);
 
+        JLabel Label19 = new JLabel("Name of Relay");
+        Label19.setBounds(100, 100, 100, 100);
+
         //Creation of Button
         JButton CreateRelay = new JButton("Create Relay");
         CreateRelay.setBounds(700,350,150,50);;
@@ -158,7 +165,6 @@ public class createRelay {
         RelayBox.add(Label17);
         RelayBox.add(Label18);
 
-
         RelayBox.add(FirstNameText1);
         RelayBox.add(FirstNameText2);
         RelayBox.add(FirstNameText3);
@@ -179,6 +185,7 @@ public class createRelay {
         RelayBox.add(SwimmerFourGender);
         RelayBox.add(typeOfRace);
         RelayBox.add(Primary);
+        RelayBox.add(RelayName);
 
         RelayBox.add(CreateRelay);
 
