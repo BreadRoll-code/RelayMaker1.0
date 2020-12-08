@@ -199,6 +199,12 @@ public class createRelay {
         RelayBox.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         //Makes button do things
+
+        BackButton.addActionListener(arg0 -> {
+            RelayBox.setVisible(false);
+            Menu.addGUI();
+        });
+
         CreateRelay.addActionListener(arg0 -> {
 
             Relay relay = new Relay();
