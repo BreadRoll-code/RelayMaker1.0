@@ -73,9 +73,12 @@ public class addSwimmer extends Swimmer {
         JTextField HundredFreeText = new JTextField();
         HundredFreeText.setBounds(525, 300, 100, 25);
 
-        //Creation of Button
+        //Creation of Buttons
         JButton Button1 = new JButton("Create Swimmer");
         Button1.setBounds(800,350,150,50);
+
+        JButton BackButton = new JButton("Back");
+        BackButton.setBounds(0,0,100,30);
 
         //Creation of Drop Down Menu
         String[] strokes = {"Can swim all strokes", "Fly", "Back", "Breast", "Free"};
@@ -97,6 +100,7 @@ public class addSwimmer extends Swimmer {
         box.add(Label11);
 
         box.add(Button1);
+        box.add(BackButton);
         box.add(MustSwimX);
 
         box.add(NameText1);
@@ -115,6 +119,12 @@ public class addSwimmer extends Swimmer {
         box.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         Swimmer swimmer = new Swimmer();
+
+        //Makes back button work
+        BackButton.addActionListener(arg0 -> {
+            box.setVisible(false);
+            Menu.addGUI();
+        });
 
         //When button is pressed all information in text fields is saved to .txt files
         Button1.addActionListener(arg0 -> {
