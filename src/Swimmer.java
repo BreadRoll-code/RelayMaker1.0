@@ -10,10 +10,10 @@ public class Swimmer {
     private static double oneHundredBack;
     private static double oneHundredBreast;
     private static double oneHundredFree;
-    private static int mustSwimFly;
-    private static int mustSwimBack;
-    private static int mustSwimBreast;
-    private static int mustSwimFree;
+    private static int canSwimFly;
+    private static int canSwimBack;
+    private static int canSwimBreast;
+    private static int canSwimFree;
     private static int canSwimAll;
 
     
@@ -37,13 +37,13 @@ public class Swimmer {
 
     public void setOneHundredFree(Double timeFree) { this.oneHundredFree = timeFree;}
 
-    public void setMustSwimFly(Integer mustSwimFly) {this.mustSwimFly = mustSwimFly;}
+    public void setCanSwimFly(Integer mustSwimFly) {this.canSwimFly = mustSwimFly;}
 
-    public void setMustSwimBack(Integer mustSwimBack) {this.mustSwimBack = mustSwimBack;}
+    public void setCanSwimBack(Integer mustSwimBack) {this.canSwimBack = mustSwimBack;}
 
-    public void setMustSwimBreast(Integer mustSwimBreast) {this.mustSwimBreast = mustSwimBreast;}
+    public void setCanSwimBreast(Integer mustSwimBreast) {this.canSwimBreast = mustSwimBreast;}
 
-    public void setMustSwimFree(Integer mustSwimFree) {this.mustSwimFree = mustSwimFree;}
+    public void setCanSwimFree(Integer mustSwimFree) {this.canSwimFree = mustSwimFree;}
 
     public void setCanSwimAll(Integer canSwimAll) {this.canSwimAll = canSwimAll;}
 
@@ -84,23 +84,25 @@ public class Swimmer {
         return oneHundredFree;
     }
 
-    public static Integer getMustSwimFly() {
-        return mustSwimFly;
+    public static Integer getCanSwimFly() {
+        return canSwimFly;
     }
 
-    public static Integer getMustSwimBack() {
-        return mustSwimBack;
+    public static Integer getCanSwimBack() {
+        return canSwimBack;
     }
 
-    public static Integer getMustSwimBreast() {
-        return mustSwimBreast;
+    public static Integer getCanSwimBreast() {
+        return canSwimBreast;
     }
 
-    public static Integer getMustSwimFree() {
-        return mustSwimFree;
+    public static Integer getCanSwimFree() {
+        return canSwimFree;
     }
 
     public static Integer getCanSwimAll() {
         return canSwimAll;
     }
+
+
 }

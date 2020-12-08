@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -50,4 +51,12 @@ public class SaveInfo {
         System.out.println(pos);
         return pos;
     }
+
+    static String getLine(Integer line, String filePath) throws IOException {
+        File file = new File(filePath);
+        RandomAccessFile raf = new RandomAccessFile(file, "rw");
+        raf.seek(position(line, filePath));
+        return raf.readLine();
+    }
+
 }

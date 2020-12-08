@@ -286,8 +286,6 @@ public class createRelay {
             //Find the widest
     }
 
-    static void bullShit(){
 
-    }
 
 }

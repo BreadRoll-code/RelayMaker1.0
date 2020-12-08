@@ -176,7 +176,7 @@ public class addSwimmer extends Swimmer {
                 e.printStackTrace();
             }
 
-            if (MustSwimX.getSelectedIndex() == 1) { swimmer.setMustSwimFly(MustSwimX.getSelectedIndex());
+            if (MustSwimX.getSelectedIndex() == 1) { swimmer.setCanSwimFly(MustSwimX.getSelectedIndex());
             try {
                 info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
@@ -184,7 +184,7 @@ public class addSwimmer extends Swimmer {
                 }
             }
 
-            else if (MustSwimX.getSelectedIndex() == 2) {swimmer.setMustSwimBack(MustSwimX.getSelectedIndex());
+            else if (MustSwimX.getSelectedIndex() == 2) {swimmer.setCanSwimBack(MustSwimX.getSelectedIndex());
             try {
                 info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
@@ -192,7 +192,7 @@ public class addSwimmer extends Swimmer {
                 }
             }
 
-            else if (MustSwimX.getSelectedIndex() == 3) {swimmer.setMustSwimBreast(MustSwimX.getSelectedIndex());
+            else if (MustSwimX.getSelectedIndex() == 3) {swimmer.setCanSwimBreast(MustSwimX.getSelectedIndex());
             try {
                 info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
@@ -200,7 +200,7 @@ public class addSwimmer extends Swimmer {
                 }
             }
 
-            else if (MustSwimX.getSelectedIndex() == 4) {swimmer.setMustSwimFree(MustSwimX.getSelectedIndex());
+            else if (MustSwimX.getSelectedIndex() == 4) {swimmer.setCanSwimFree(MustSwimX.getSelectedIndex());
             try {
                 info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {
@@ -208,7 +208,7 @@ public class addSwimmer extends Swimmer {
                 }
             }
 
-            else if (MustSwimX.getSelectedIndex() == 0) { swimmer.setMustSwimFree(MustSwimX.getSelectedIndex());
+            else if (MustSwimX.getSelectedIndex() == 0) { swimmer.setCanSwimFree(MustSwimX.getSelectedIndex());
             try {
                 info.saveInfoInt(MustSwimX.getSelectedIndex(), "mustswimx.txt");
                 } catch (IOException e) {

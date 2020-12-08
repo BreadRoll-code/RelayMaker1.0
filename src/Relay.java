@@ -71,4 +71,12 @@ public class Relay {
     public Integer getSwimmerPrimary() { return SwimmerPrimary; }
 
     public Integer getRaceChosen() { return RaceChosen; }
+
+    static void bullShit(){
+
+    }
+
+    static String[] tempSwimmers() {
+        Swimmer swimmer = new Swimmer();
+    }
 }
