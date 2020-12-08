@@ -141,9 +141,12 @@ public class createRelay {
         JLabel Label19 = new JLabel("Name of Relay");
         Label19.setBounds(100, 100, 100, 100);
 
-        //Creation of Button
+        //Creation of Buttons
         JButton CreateRelay = new JButton("Create Relay");
-        CreateRelay.setBounds(700,350,150,50);;
+        CreateRelay.setBounds(700,350,150,50);
+
+        JButton BackButton = new JButton("Back");
+        BackButton.setBounds(0,0,100,30);
 
         //Adding to Box
         RelayBox.add(Label1);
@@ -188,6 +191,7 @@ public class createRelay {
         RelayBox.add(RelayName);
 
         RelayBox.add(CreateRelay);
+        RelayBox.add(BackButton);
 
         //Makes close on exit and sets visible
         RelayBox.setLayout(null);
