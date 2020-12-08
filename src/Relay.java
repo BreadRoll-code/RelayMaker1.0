@@ -76,7 +76,5 @@ public class Relay {
 
     }
 
-    static String[] tempSwimmers() {
-        Swimmer swimmer = new Swimmer();
-    }
+
 }

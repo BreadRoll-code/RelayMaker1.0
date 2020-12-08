@@ -43,20 +43,7 @@ public class RelayMaker extends Swimmer {
         swimmer.setOneHundredFree(hfr);
 
         //Calls save info
-        SaveInfo info = new SaveInfo();
-        info.saveInfo(getFirstName() + " " + getLastName(),"name.txt");
-        info.saveInfo(String.valueOf(getAge()), "age.txt");
-        info.saveInfo(String.valueOf(getGroup()), "group.txt");
-        info.saveInfo(String.valueOf(getGender()), "gender.txt");
-        info.saveInfo(String.valueOf(getOneHundredFly()), "100fly.txt");
-        info.saveInfo(String.valueOf(getOneHundredBack()), "100back.txt");
-        info.saveInfo(String.valueOf(getOneHundredBreast()), "100breast.txt");
-        info.saveInfo(String.valueOf(getOneHundredFree()), "100free.txt");
-        info.saveInfo(String.valueOf(getCanSwimFly()), "mustswimx.txt");
-        info.saveInfo(String.valueOf(getCanSwimBack()), "mustswimx.txt");
-        info.saveInfo(String.valueOf(getCanSwimBreast()), "mustswimx.txt");
-        info.saveInfo(String.valueOf(getCanSwimFree()), "mustswimx.txt");
-        info.saveInfo(String.valueOf(getCanSwimAll()), "mustswimx.txt");
+
 
         //text field name.get text
 

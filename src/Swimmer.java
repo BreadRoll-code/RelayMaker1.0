@@ -1,20 +1,20 @@
 public class Swimmer {
 
     //TODO Swimmer variables
-    private static String firstName;
-    private static String lastName;
-    private static int age;
-    private static String group;
-    private static int gender;
-    private static double oneHundredFly;
-    private static double oneHundredBack;
-    private static double oneHundredBreast;
-    private static double oneHundredFree;
-    private static int canSwimFly;
-    private static int canSwimBack;
-    private static int canSwimBreast;
-    private static int canSwimFree;
-    private static int canSwimAll;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String group;
+    private int gender;
+    private double oneHundredFly;
+    private double oneHundredBack;
+    private double oneHundredBreast;
+    private double oneHundredFree;
+    private int canSwimFly;
+    private int canSwimBack;
+    private int canSwimBreast;
+    private int canSwimFree;
+    private int canSwimAll;
 
     
     //Sets variables
@@ -48,59 +48,59 @@ public class Swimmer {
     public void setCanSwimAll(Integer canSwimAll) {this.canSwimAll = canSwimAll;}
 
     //Output variables
-    public static String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public static String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public static Integer getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public static String getGroup() {
+    public String getGroup() {
         return group;
     }
 
-    public static Integer getGender() {
+    public Integer getGender() {
         return gender;
     }
 
-    public static Double getOneHundredFly() {
+    public Double getOneHundredFly() {
         return oneHundredFly;
     }
 
-    public static Double getOneHundredBack() {
+    public Double getOneHundredBack() {
         return oneHundredBack;
     }
 
-    public static Double getOneHundredBreast() {
+    public Double getOneHundredBreast() {
         return oneHundredBreast;
     }
 
-    public static Double getOneHundredFree() {
+    public Double getOneHundredFree() {
         return oneHundredFree;
     }
 
-    public static Integer getCanSwimFly() {
+    public Integer getCanSwimFly() {
         return canSwimFly;
     }
 
-    public static Integer getCanSwimBack() {
+    public Integer getCanSwimBack() {
         return canSwimBack;
     }
 
-    public static Integer getCanSwimBreast() {
+    public Integer getCanSwimBreast() {
         return canSwimBreast;
     }
 
-    public static Integer getCanSwimFree() {
+    public  Integer getCanSwimFree() {
         return canSwimFree;
     }
 
-    public static Integer getCanSwimAll() {
+    public Integer getCanSwimAll() {
         return canSwimAll;
     }
 

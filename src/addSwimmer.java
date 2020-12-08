@@ -81,8 +81,7 @@ public class addSwimmer extends Swimmer {
         BackButton.setBounds(0,0,100,30);
 
         //Creation of Drop Down Menu
-        String[] strokes = {"Can swim all strokes", "Fly", "Back", "Breast", "Free"};
-        JComboBox MustSwimX = new JComboBox(strokes);
+        JComboBox MustSwimX = new JComboBox(new String[]{"Can swim all strokes", "Fly", "Back", "Breast", "Free"});
         MustSwimX.setBounds(500,350,150,25);
         MustSwimX.setSelectedIndex(0);
 
@@ -130,11 +129,6 @@ public class addSwimmer extends Swimmer {
         Button1.addActionListener(arg0 -> {
             swimmer.setName(NameText1.getText(), NameText2.getText());
             box.setVisible(false);
-            try {
-                info.saveInfo(NameText1.getText() + " " + NameText2.getText(), "name.txt");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
 
             swimmer.setAge(Integer.parseInt(AgeText.getText()));
             try {
@@ -225,8 +219,9 @@ public class addSwimmer extends Swimmer {
                     e.printStackTrace();
                 }
             }
-
         });
     }
+
+
 }
 

@@ -7,7 +7,9 @@ public class getSwimmer extends SaveInfo{
         swimmer.setName(firstName, lastName);
         swimmer.setAge(Integer.parseInt(getLine(l,"age.txt")));
         swimmer.setGender(Integer.parseInt(getLine(l,"gender.txt")));
-        swimmer.s
+        swimmer.setCanSwimAll(Integer.parseInt(getLine(l,"gender.txt")));
+        swimmer.setCanSwimBreast(Integer.parseInt(getLine(l, "strokes.txt")));
+        return null;
     }
 
     Integer getLineOf(String name) throws IOException {

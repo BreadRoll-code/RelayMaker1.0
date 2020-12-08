@@ -16,7 +16,6 @@ public class SaveInfo {
             raf.seek(raf.length());
             raf.writeBytes("\n" + info);
         }
-
     }
 
     void saveInfoInt(int info, String filePath) throws IOException {
@@ -57,6 +56,11 @@ public class SaveInfo {
         RandomAccessFile raf = new RandomAccessFile(file, "rw");
         raf.seek(position(line, filePath));
         return raf.readLine();
+    }
+
+    void saveSwimmer(Swimmer swimmer) throws IOException {
+        saveInfo(swimmer.getFirstName() + " " + swimmer.getLastName(), "name.txt"); //this is an example of what to do, u will notice that you no longer save the name data in the GUI
+        // If you need further clarification, text me, im not doing anything
     }
 
 }
