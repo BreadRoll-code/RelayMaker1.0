@@ -31,6 +31,19 @@ public class SaveInfo {
 
     }
 
+    void saveInfoDouble(double info, String filePath) throws IOException {
+        File file = new File(filePath);
+        RandomAccessFile raf = new RandomAccessFile(file, "rw");
+        if (raf.length() == 0) {
+            raf.seek(0);
+            raf.writeBytes(String.valueOf(info));
+        } else {
+            raf.seek(raf.length());
+            raf.writeBytes("\n" + info);
+        }
+
+    }
+
     static Integer position(Integer line, String filePath) throws IOException {
         File file = new File(filePath);
         RandomAccessFile raf = new RandomAccessFile(file, "rw");
@@ -59,8 +72,13 @@ public class SaveInfo {
     }
 
     void saveSwimmer(Swimmer swimmer) throws IOException {
-        saveInfo(swimmer.getFirstName() + " " + swimmer.getLastName(), "name.txt"); //this is an example of what to do, u will notice that you no longer save the name data in the GUI
-        // If you need further clarification, text me, im not doing anything
+        saveInfo(swimmer.getFirstName() + " " + swimmer.getLastName(), "name.txt");
+        saveInfoInt(swimmer.getAge(),"age.txt");
+        saveInfoInt(swimmer.getGender(),"gender.txt");
+        saveInfoDouble(swimmer.getOneHundredFly(),"100fly.txt");
+        saveInfoDouble(swimmer.getOneHundredBack(),"100back.txt");
+        saveInfoDouble(swimmer.getOneHundredBreast(),"100breast.txt");
+        saveInfoDouble(swimmer.getOneHundredFree(),"100free.txt");
     }
 
 }

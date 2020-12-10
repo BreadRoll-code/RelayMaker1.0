@@ -22,7 +22,7 @@ public class Menu {
         JButton MenuButton3 = new JButton("View Relay");
         MenuButton3.setBounds(500, 300, 150, 50);
 
-        JButton MenuButton4 = new JButton("View Swimmers");
+        JButton MenuButton4 = new JButton("View Swimmer");
         MenuButton4.setBounds(700, 300, 150, 50);
 
         //Adding to Box
