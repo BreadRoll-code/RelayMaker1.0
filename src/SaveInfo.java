@@ -72,7 +72,7 @@ public class SaveInfo {
     }
 
     void saveSwimmer(Swimmer swimmer) throws IOException {
-        saveInfo(swimmer.getFirstName() + " " + swimmer.getLastName(), "name.txt");
+        saveInfo(swimmer.getName(), "name.txt");
         saveInfoInt(swimmer.getAge(),"age.txt");
         saveInfoInt(swimmer.getGender(),"gender.txt");
         saveInfoDouble(swimmer.getOneHundredFly(),"100fly.txt");

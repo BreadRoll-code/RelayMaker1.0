@@ -1,8 +1,7 @@
 public class Swimmer {
 
     //TODO Swimmer variables
-    private String firstName;
-    private String lastName;
+    private String name;
     private int age;
     private String group;
     private int gender;
@@ -18,9 +17,8 @@ public class Swimmer {
 
     
     //Sets variables
-    public void setName(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setAge(Integer age) { this.age = age;}
@@ -48,12 +46,8 @@ public class Swimmer {
     public void setCanSwimAll(Integer canSwimAll) {this.canSwimAll = canSwimAll;}
 
     //Output variables
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return name;
     }
 
     public Integer getAge() {
