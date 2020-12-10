@@ -127,7 +127,7 @@ public class addSwimmer extends Swimmer {
 
         //When button is pressed all information in text fields is saved to .txt files
         Button1.addActionListener(arg0 -> {
-            swimmer.setName(NameText1.getText(), NameText2.getText());
+            swimmer.setName(NameText1.getText() + " " + NameText2.getText());
             box.setVisible(false);
 
             swimmer.setAge(Integer.parseInt(AgeText.getText()));

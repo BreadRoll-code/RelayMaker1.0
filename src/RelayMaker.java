@@ -33,7 +33,7 @@ public class RelayMaker extends Swimmer {
         Double hfr = Double.parseDouble(in.nextLine());
 
         //Setters (console)
-        swimmer.setName(n, ln);
+        swimmer.setName(n + " " + ln);
         swimmer.setAge(a);
         swimmer.setGroup(g);
         swimmer.setGender(ge);
