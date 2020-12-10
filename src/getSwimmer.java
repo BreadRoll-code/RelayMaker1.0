@@ -49,7 +49,9 @@ public class getSwimmer extends SaveInfo{
             }
             hashMap.put(time, swimmers[i]);
         }
+        return null;
     }
+
 
 
     Integer getLineOf(String name) throws IOException {
