@@ -52,6 +52,14 @@ public class Menu {
             }
         });
 
+        MenuButton4.addActionListener(arg0 -> {
+            MenuBox.setVisible(false);
+            try {
+                viewSwimmer.addGUI();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
 
