@@ -30,22 +30,24 @@ public class getSwimmer extends SaveInfo{
     public Swimmer[] selectSwimmers(Swimmer[] swimmers, String stroke) {
         HashMap<Double, Swimmer> hashMap = new HashMap<>();
 
-        String time;
+        Double time;
 
 
         for(int i = 0; i < swimmers.length; i++) {
             switch (stroke) {
                 case "100fly" :
-                    time = ;
-
+                    time = swimmers[i].getOneHundredFly();
                 case "100back":
-                    filePath = "100back.txt";
+                    time = swimmers[i].getOneHundredBack();
                 case "100breast":
-                    filePath = "100breast.txt";
+                    time = swimmers[i].getOneHundredBreast();
                 case "100free":
-                    filePath = "100free.txt";
+                    time = swimmers[i].getOneHundredFree();
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + stroke);
             }
-            hashMap.put(Double.parseDouble(swimmers[i].getName()), )
+            hashMap.put(time, swimmers[i]);
         }
     }
 
