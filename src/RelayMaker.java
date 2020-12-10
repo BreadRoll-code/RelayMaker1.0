@@ -1,4 +1,6 @@
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class RelayMaker extends Swimmer {
@@ -7,6 +9,14 @@ public class RelayMaker extends Swimmer {
 
         //Adds the GUI
         Menu.addGUI();
+
+        SwimmerSort swimmerSort = new SwimmerSort();
+
+       Swimmer[] swimmers = swimmerSort.selectStroke(swimmerSort.getAllSwimmers(), "100back");
+
+     for (Swimmer swimmer : swimmers) {
+      System.out.println(swimmer.getOneHundredBack());
+     }
 
         //Adds Scanner
         Scanner in = new Scanner(System.in);

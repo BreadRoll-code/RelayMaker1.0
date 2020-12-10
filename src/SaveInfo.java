@@ -60,7 +60,6 @@ public class SaveInfo {
                 pos = pos - 1;
             }
         }
-        System.out.println(pos);
         return pos;
     }
 
