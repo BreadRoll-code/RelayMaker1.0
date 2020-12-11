@@ -52,6 +52,15 @@ public class Menu {
             }
         });
 
+        MenuButton3.addActionListener(arg0 -> {
+            MenuBox.setVisible(false);
+            try {
+                viewRelay.addGUI();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+
         MenuButton4.addActionListener(arg0 -> {
             MenuBox.setVisible(false);
             try {
