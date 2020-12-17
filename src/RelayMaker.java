@@ -5,55 +5,43 @@ import java.util.Scanner;
 
 public class RelayMaker extends Swimmer {
 
-    public static void main(String[] args) throws IOException {
+   public static void main(String[] args) throws IOException {
 
-        //Adds the GUI
-        Menu.addGUI();
+      //Adds the GUI
+      Menu.addGUI();
 
-        SwimmerSort swimmerSort = new SwimmerSort();
+      //Adds Scanner
+      Scanner in = new Scanner(System.in);
+      SwimmerSort swimmerSort = new SwimmerSort();
+      Double time;
 
-       Swimmer[] swimmers = swimmerSort.selectStroke(swimmerSort.getAllSwimmers(), "100back");
+      //Asks for information (console)
+      System.out.println("what stroke would you like to view?");
+      String stroke = in.nextLine();
 
-     for (Swimmer swimmer : swimmers) {
-      System.out.println(swimmer.getOneHundredBack());
-     }
+      Swimmer[] swimmers = swimmerSort.selectStroke(swimmerSort.getAllSwimmers(), stroke);
 
-        //Adds Scanner
-        Scanner in = new Scanner(System.in);
+      for (Swimmer swimmer : swimmers) {
+         switch (stroke) {
+            case "100fly":
+               time = swimmer.getOneHundredFly();
+               break;
+            case "100back":
+               time = swimmer.getOneHundredBack();
+               break;
+            case "100breast":
+               time = swimmer.getOneHundredBreast();
+               break;
+            case "100free":
+               time = swimmer.getOneHundredFree();
+               break;
+            default:
+               throw new IllegalStateException("Unexpected value: " + stroke);
+         }
+         System.out.println(swimmer.getName() + ": " + time);
+      }
 
-        //Asks for information (console)
-        Swimmer swimmer = new Swimmer();
-        System.out.println("name please ");
-        String n = in.nextLine();
-        System.out.println("last name please ");
-        String ln = in.nextLine();
-        System.out.println("age please ");
-        Integer a = Integer.parseInt(in.nextLine());
-        System.out.println("group please ");
-        String g = in.nextLine();
-        System.out.println("gender please");
-        Integer ge = Integer.parseInt(in.nextLine());
-        System.out.println("hundred fly please");
-        Double hf = Double.parseDouble(in.nextLine());
-        System.out.println("hundred back please");
-        Double hb = Double.parseDouble(in.nextLine());
-        System.out.println("hundred breast please");
-        Double hbr = Double.parseDouble(in.nextLine());
-        System.out.println("hundred free please");
-        Double hfr = Double.parseDouble(in.nextLine());
-
-        //Setters (console)
-        swimmer.setName(n + " " + ln);
-        swimmer.setAge(a);
-        swimmer.setGroup(g);
-        swimmer.setGender(ge);
-        swimmer.setOneHundredFly(hf);
-        swimmer.setOneHundredBack(hb);
-        swimmer.setOneHundredBreast(hbr);
-        swimmer.setOneHundredFree(hfr);
-
-        }
-
-    }
+   }
+}
 
 

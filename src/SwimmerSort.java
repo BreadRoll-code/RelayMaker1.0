@@ -70,7 +70,6 @@ public class SwimmerSort extends SaveInfo{
                 .sorted(Map.Entry.comparingByValue())
                 .forEachOrdered(x -> sorted.put(x.getKey(), x.getValue()));
 
-        System.out.println(sorted);
         Set<Map.Entry<Swimmer, Double>> entries = sorted.entrySet();
 
         int i = 0;
