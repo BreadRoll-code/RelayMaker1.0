@@ -25,7 +25,7 @@ public class SwimmerSort extends SaveInfo{
         return swimmers.toArray(Swimmer[]::new);
     }
     public Swimmer[] selectStroke(Swimmer[] swimmers, String stroke) {
-        HashMap<Double, Swimmer> hashMap = new HashMap<>();
+        HashMap<Swimmer, Double> hashMap = new HashMap<>();
 
         Double time;
 
@@ -33,17 +33,20 @@ public class SwimmerSort extends SaveInfo{
             switch (stroke) {
                 case "100fly":
                     time = swimmer.getOneHundredFly();
+                    break;
                 case "100back":
                     time = swimmer.getOneHundredBack();
+                    break;
                 case "100breast":
                     time = swimmer.getOneHundredBreast();
+                    break;
                 case "100free":
                     time = swimmer.getOneHundredFree();
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + stroke);
             }
-            hashMap.put(time, swimmer);
+            hashMap.put(swimmer, time);
         }
         return sortTimes(hashMap);
     }
@@ -57,18 +60,27 @@ public class SwimmerSort extends SaveInfo{
         return i;
     }
 
-    public Swimmer[] sortTimes(HashMap<Double, Swimmer> HMap) {
+    public Swimmer[] sortTimes(HashMap<Swimmer, Double> HMap) {
         Swimmer[] list = new Swimmer[HMap.size()];
-        Map<Double, Swimmer> map = new TreeMap<>(HMap);
 
-        Set<Map.Entry<Double, Swimmer>> entries = map.entrySet();
+        Map<Swimmer, Double> sorted = new LinkedHashMap<>();
+
+        HMap.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .forEachOrdered(x -> sorted.put(x.getKey(), x.getValue()));
+
+        System.out.println(sorted);
+        Set<Map.Entry<Swimmer, Double>> entries = sorted.entrySet();
 
         int i = 0;
-        for (Map.Entry<Double, Swimmer> entry : entries) {
-            list[i] = entry.getValue();
+        for (Map.Entry<Swimmer, Double> entry : entries) {
+            list[i] = entry.getKey();
             i++;
         }
         return list;
     }
 
 }
+
+
