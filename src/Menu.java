@@ -9,8 +9,8 @@ public class Menu {
         MenuBox.setBounds(150,100,1000,500);
 
         //Creation of Label
-        JLabel MenuLabel1 = new JLabel("LABEL");
-        MenuLabel1.setBounds(500,30,50,100);
+        JLabel MenuLabel1 = new JLabel("Relay Maker Program");
+        MenuLabel1.setBounds(450,30,200,100);
 
         //Creation of Buttons
         JButton MenuButton1 = new JButton("Create Relay");
