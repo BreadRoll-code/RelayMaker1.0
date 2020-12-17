@@ -52,19 +52,6 @@ public class RelayMaker extends Swimmer {
         swimmer.setOneHundredBreast(hbr);
         swimmer.setOneHundredFree(hfr);
 
-        //Calls save info
-
-
-        //text field name.get text
-
-
-
-
-        //Runs the add swimmer class
-        //addSwimmer.addSwimmer();
-
-        //Compare swimmers
-
         }
 
     }

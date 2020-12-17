@@ -288,12 +288,7 @@ public class createRelay {
             }
         });
 
-        //Reads info function
 
-        //Find applicable swimmers
-            //Will need true or false
-            //Go through each raf
-            //Find the widest
     }
 
 
