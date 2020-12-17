@@ -51,14 +51,9 @@ public class SaveInfo {
         int lineLength;
         for (int i = 0; i < line; i++) {
             raf.seek(pos);
-            if (raf.readLine() != null) {
-                raf.seek(pos);
-                lineLength = raf.readLine().length();
-                pos = pos + lineLength + 1;
-            }
-            if (pos > 0) {
-                pos = pos - 1;
-            }
+            String lineText = raf.readLine();
+            lineLength = lineText.length();
+            pos = pos + lineLength + 2;
         }
         return pos;
     }

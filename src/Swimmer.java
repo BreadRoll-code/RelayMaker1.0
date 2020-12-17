@@ -98,5 +98,11 @@ public class Swimmer {
         return canSwimAll;
     }
 
+    void printSwimmer() {
+        System.out.println(name);
+        System.out.println(oneHundredBack);
+        System.out.println(oneHundredBreast);
+        System.out.println(oneHundredBreast);
 
+    }
 }

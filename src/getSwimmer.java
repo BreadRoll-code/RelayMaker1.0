@@ -33,21 +33,21 @@ public class getSwimmer extends SaveInfo{
         Double time;
 
 
-        for(int i = 0; i < swimmers.length; i++) {
+        for (Swimmer swimmer : swimmers) {
             switch (stroke) {
-                case "100fly" :
-                    time = swimmers[i].getOneHundredFly();
+                case "100fly":
+                    time = swimmer.getOneHundredFly();
                 case "100back":
-                    time = swimmers[i].getOneHundredBack();
+                    time = swimmer.getOneHundredBack();
                 case "100breast":
-                    time = swimmers[i].getOneHundredBreast();
+                    time = swimmer.getOneHundredBreast();
                 case "100free":
-                    time = swimmers[i].getOneHundredFree();
+                    time = swimmer.getOneHundredFree();
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + stroke);
             }
-            hashMap.put(time, swimmers[i]);
+            hashMap.put(time, swimmer);
         }
         return null;
     }

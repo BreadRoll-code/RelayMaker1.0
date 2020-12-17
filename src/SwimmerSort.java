@@ -5,26 +5,24 @@ public class SwimmerSort extends SaveInfo{
     public Swimmer getSwimmerOf(String name) throws IOException {
         Swimmer swimmer = new Swimmer();
         int line = getLineOf(name);
-        try {
-            swimmer.setAge(Integer.parseInt(getLine(line,"age.txt")));
-            swimmer.setGender(Integer.parseInt(getLine(line,"gender.txt")));
-            swimmer.setOneHundredFly(Double.parseDouble(getLine(line,"100fly.txt")));
-            swimmer.setOneHundredBack(Double.parseDouble(getLine(line,"100back.txt")));
-            swimmer.setOneHundredBreast(Double.parseDouble(getLine(line,"100breast.txt")));
-            swimmer.setOneHundredFree(Double.parseDouble(getLine(line,"100free.txt")));
-        } catch (NumberFormatException ignored) {}
+        swimmer.setAge(Integer.parseInt(getLine(line,"age.txt")));
+        swimmer.setGender(Integer.parseInt(getLine(line,"gender.txt")));
+        swimmer.setOneHundredFly(Double.parseDouble(getLine(line,"100fly.txt")));
+        swimmer.setOneHundredBack(Double.parseDouble(getLine(line,"100back.txt")));
+        swimmer.setOneHundredBreast(Double.parseDouble(getLine(line,"100breast.txt")));
+        swimmer.setOneHundredFree(Double.parseDouble(getLine(line,"100free.txt")));
         swimmer.setName(name);
         return swimmer;
     }
 
     public Swimmer[] getAllSwimmers() throws IOException {
-        Swimmer[] swimmers = new Swimmer[10];
+        ArrayList<Swimmer> swimmers = new ArrayList<>();
         int i = 0;
-        while (!getLine(i, "name.txt").equals("")) {
-            swimmers[i] = getSwimmerOf(getLine(i,"name.txt"));
+        while (getLine(i, "name.txt") != null) {
+            swimmers.add(getSwimmerOf(getLine(i,"name.txt")));
             i++;
         }
-        return swimmers;
+        return swimmers.toArray(Swimmer[]::new);
     }
     public Swimmer[] selectStroke(Swimmer[] swimmers, String stroke) {
         HashMap<Double, Swimmer> hashMap = new HashMap<>();
@@ -62,7 +60,9 @@ public class SwimmerSort extends SaveInfo{
     public Swimmer[] sortTimes(HashMap<Double, Swimmer> HMap) {
         Swimmer[] list = new Swimmer[HMap.size()];
         Map<Double, Swimmer> map = new TreeMap<>(HMap);
+
         Set<Map.Entry<Double, Swimmer>> entries = map.entrySet();
+
         int i = 0;
         for (Map.Entry<Double, Swimmer> entry : entries) {
             list[i] = entry.getValue();
@@ -70,8 +70,5 @@ public class SwimmerSort extends SaveInfo{
         }
         return list;
     }
-
-
-
 
 }
