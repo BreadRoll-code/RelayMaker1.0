@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 
 public class viewSwimmer {
@@ -25,28 +26,28 @@ public class viewSwimmer {
         JLabel Label3 = new JLabel("Swimmer Last Name");
         Label3.setBounds(100, 200, 200, 25);
 
-        JLabel Label4 = new JLabel("First Name: ");
+        JLabel Label4 = new JLabel();
         Label4.setBounds(450, 150, 200, 25);
 
-        JLabel Label5 = new JLabel("Last Name: ");
+        JLabel Label5 = new JLabel();
         Label5.setBounds(450, 200, 200, 25);
 
-        JLabel Label6 = new JLabel("Age: ");
+        JLabel Label6 = new JLabel();
         Label6.setBounds(450, 250, 200, 25);
 
-        JLabel Label7 = new JLabel("Gender: ");
+        JLabel Label7 = new JLabel();
         Label7.setBounds(450, 300, 200, 25);
 
-        JLabel Label9 = new JLabel("100 Fly Time: ");
+        JLabel Label9 = new JLabel();
         Label9.setBounds(700, 150, 200, 25);
 
-        JLabel Label10 = new JLabel("100 Back Time: ");
+        JLabel Label10 = new JLabel();
         Label10.setBounds(700, 200, 200, 25);
 
-        JLabel Label11 = new JLabel("100 Breast Time: ");
+        JLabel Label11 = new JLabel();
         Label11.setBounds(700, 250, 200, 25);
 
-        JLabel Label12 = new JLabel("100 Free Time: ");
+        JLabel Label12 = new JLabel();
         Label12.setBounds(700, 300, 200, 25);
 
         //Creation of Buttons
@@ -82,6 +83,25 @@ public class viewSwimmer {
         viewBox.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         //Makes back button work
+
+        Search.addActionListener(arg0 -> {
+            try {
+                Swimmer swimmer = SwimmerSort.getSwimmerOf(NameText1.getText() + " " + NameText2.getText());
+                Label4.setText("Name: " + swimmer.getName());
+                Label6.setText("Age: " + swimmer.getAge());
+                Label7.setText("Gender: " + swimmer.getGender());
+                Label9.setText("100 Fly Time: " + swimmer.getOneHundredFly());
+                Label10.setText("100 Back Time: " + swimmer.getOneHundredBack());
+                Label11.setText("100 Breast Time: " + swimmer.getOneHundredBreast());
+                Label12.setText("100 Free Time: " + swimmer.getOneHundredFree());
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        });
+
         BackButton.addActionListener(arg0 -> {
             viewBox.setVisible(false);
             Menu.addGUI();

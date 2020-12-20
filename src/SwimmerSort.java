@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class SwimmerSort extends SaveInfo{
-    public Swimmer getSwimmerOf(String name) throws IOException {
+    public static Swimmer getSwimmerOf(String name) throws IOException {
         Swimmer swimmer = new Swimmer();
         int line = getLineOf(name);
         swimmer.setAge(Integer.parseInt(getLine(line,"age.txt")));
@@ -52,7 +52,7 @@ public class SwimmerSort extends SaveInfo{
     }
 
 
-    Integer getLineOf(String name) throws IOException {
+    static Integer getLineOf(String name) throws IOException {
         int i = 0;
         while(!getLine(i, "name.txt").equals(name)) {
             i++;
